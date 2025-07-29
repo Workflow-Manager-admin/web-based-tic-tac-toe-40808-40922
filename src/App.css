@@ -1,0 +1,51 @@
+.app {
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  grid-template-rows: repeat(3, 60px);
+  gap: 8px;
+  margin: 32px auto 16px auto;
+  width: max-content;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  background: #f4f4f4;
+  border: 1px solid #b8b8b8;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.square:focus {
+  outline: none;
+  background: #ddeaf4;
+}
+
+.status {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.restart-btn {
+  margin-top: 8px;
+  padding: 10px 22px;
+  font-size: 1rem;
+  border-radius: 8px;
+  background: #2196f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.restart-btn:hover {
+  background: #1976d2;
+}
